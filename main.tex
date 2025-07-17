@@ -1,0 +1,73 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Assignment 2 (Potentiometer)}
+\author{Saaburo-Borkpeen Ngmenbob Boniface, 4108424}
+
+\begin{document}
+\maketitle
+
+
+\section{Introduction}
+
+A comprehensive report on potentiometer and how it works
+
+\subsection{Aim}
+
+To know how the potentiometer works and make observations while turning the potentiometer
+
+\subsubsection{Potentiometer}
+A potentiometer, often called a "pot," is a three-terminal electronic component functioning as a variable resistor that adjusts voltage or resistance in a circuit, commonly used in applications like volume controls, sensors, and circuit tuning. It consists of a resistive element, such as a carbon or wire strip, and a movable wiper that slides along it to vary the resistance between the wiper and two fixed terminals. By applying a voltage across the fixed terminals, the potentiometer acts as a voltage divider, producing an output voltage at the wiper that ranges from 0V to the full input voltage, depending on the wiper’s position. This position can be adjusted mechanically in rotary (e.g., knobs) or linear (e.g., sliders) potentiometers, or electronically in digital versions. For example, in a 10kΩ potentiometer with 5V across its fixed terminals, positioning the wiper at the midpoint yields approximately 2.5V. Potentiometers are versatile, enabling precise control in audio equipment, position sensors (like joysticks), and circuit calibration by correlating the wiper’s position to a physical quantity or electrical parameter.
+\subsection{Components}
+
+ \item  Breadboard
+ \item  Jumper wires
+ \item  Aduino Uno
+ \item  Potentiometer
+ \item  ESP32 Dev Board
+ \item  USB cable
+
+\subsection{Procedure}
+
+\item 1. Connect your ESP32 to your computer via USB.
+\item 2. Wire up the potentiometer as shown.
+\item 3. Open Arduino IDE:
+ Select your ESP32 board (Tools > Board > ESP32 Dev Module).
+ Select the correct port (Tools > Port).
+\item 4. Upload the code.
+
+\item 5. Open the Serial Monitor (baud rate: 115200).
+\item 6. Turn the potentiometer knob and observe the changing values (0 to 4095).
+
+
+\subsection{Observation}
+\item  1. The minimum value should be close to 0 (fully turned to GND).
+
+\item  2. The maximum value should be close to 4095 (fully turned to Vcc).
+\item  3. You can map these values to control other things like LED brightness, motor speed,sound, etc
+
+\subsection{Conclusion}
+
+In conclusion, this experiment demonstrates the potentiometer’s functionality as a variable resistor, allowing precise control of resistance and voltage in a circuit. By adjusting the wiper’s position, the resistance between the wiper and a fixed terminal changes, altering the circuit’s behavior, such as the output voltage in a voltage divider setup.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0 \textwidth]{potentiometer.png}
+    \caption{My Code}
+    \label{fig:image}
+\end{figure}
+
+
+\end{document}
